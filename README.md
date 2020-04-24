@@ -1,2 +1,2 @@
-# noahbroyles.github.io
-My Github Website
+# site-genny
+The Jekyll thing I use for generating noahbroyles.github.io
