@@ -14,13 +14,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="You know how sometimes you want to write a Python application that depends on knowing what platform it is being run on? (e.g. MacOS, Linux, or - heaven forbid - Windows?) Well, I wrote these instructions just for that purpose. Thankfully, this is not very hard to do in Python, thanks to the platform module. Here is a class I wrote for this purpose:" />
 <meta property="og:description" content="You know how sometimes you want to write a Python application that depends on knowing what platform it is being run on? (e.g. MacOS, Linux, or - heaven forbid - Windows?) Well, I wrote these instructions just for that purpose. Thankfully, this is not very hard to do in Python, thanks to the platform module. Here is a class I wrote for this purpose:" />
-<link rel="canonical" href="http://localhost:4000/2020/04/24/get-system-platform-python.html" />
-<meta property="og:url" content="http://localhost:4000/2020/04/24/get-system-platform-python.html" />
+<link rel="canonical" href="/2020/04/24/get-system-platform-python.html" />
+<meta property="og:url" content="/2020/04/24/get-system-platform-python.html" />
 <meta property="og:site_name" content="Noah Broyles Github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-24T19:00:42-04:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2020/04/24/get-system-platform-python.html","headline":"Getting the System Platform in Python","dateModified":"2020-04-24T19:00:42-04:00","datePublished":"2020-04-24T19:00:42-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/04/24/get-system-platform-python.html"},"author":{"@type":"Person","name":"Noah Broyles"},"description":"You know how sometimes you want to write a Python application that depends on knowing what platform it is being run on? (e.g. MacOS, Linux, or - heaven forbid - Windows?) Well, I wrote these instructions just for that purpose. Thankfully, this is not very hard to do in Python, thanks to the platform module. Here is a class I wrote for this purpose:","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"/2020/04/24/get-system-platform-python.html","headline":"Getting the System Platform in Python","dateModified":"2020-04-24T19:00:42-04:00","datePublished":"2020-04-24T19:00:42-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/04/24/get-system-platform-python.html"},"author":{"@type":"Person","name":"Noah Broyles"},"description":"You know how sometimes you want to write a Python application that depends on knowing what platform it is being run on? (e.g. MacOS, Linux, or - heaven forbid - Windows?) Well, I wrote these instructions just for that purpose. Thankfully, this is not very hard to do in Python, thanks to the platform module. Here is a class I wrote for this purpose:","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -62,8 +62,8 @@ Thankfully, this is not very hard to do in Python, thanks to the <code class="hi
     <span class="k">def</span> <span class="nf">isWindows</span><span class="p">():</span>
         <span class="k">return</span> <span class="n">platform</span><span class="o">.</span><span class="n">system</span><span class="p">()</span> <span class="o">==</span> <span class="s">"Windows"</span></code></pre></figure>
 
-<p>If only <code class="highlighter-rouge">Computer.isMac()</code> would return <code class="highlighter-rouge">True</code> all the time! The world would be a better place. But it would never do to have <code class="highlighter-rouge">Computer.isMac()</code> return <code class="highlighter-rouge">True</code> on a Windows 10 P<s>O</s>C, or a nice Linux machine for that matter.</p>
-
+<p>If only <code class="highlighter-rouge">Computer.isMac()</code> would return <code class="highlighter-rouge">True</code> all the time! The world would be a better place. But it would never do to have <code class="highlighter-rouge">Computer.isMac()</code> return <code class="highlighter-rouge">True</code> on a Windows 10 P<s>O</s>C, or a nice Linux machine for that matter. <br />
+<br /></p>
 <h2 id="macos-test-case">MacOS Test Case:</h2>
 <p><em><kbd>Cmd</kbd>+<kbd>Tab</kbd> to iTerm</em></p>
 
@@ -80,6 +80,7 @@ Thankfully, this is not very hard to do in Python, thanks to the <code class="hi
 <span class="bp">False</span>
 <span class="o">&gt;&gt;&gt;</span></code></pre></figure>
 
+<p><br /></p>
 <h2 id="linux-test-case">Linux Test Case:</h2>
 <p><em>Nice lil’ <code class="highlighter-rouge">ssh</code> into my desktop raspberry pi</em></p>
 
@@ -96,6 +97,7 @@ Thankfully, this is not very hard to do in Python, thanks to the <code class="hi
 <span class="bp">False</span>
 <span class="o">&gt;&gt;&gt;</span></code></pre></figure>
 
+<p><br /></p>
 <h2 id="windows-test-case">Windows Test Case:</h2>
 <p><em>I had to fire up an online VM just for this!</em></p>
 
