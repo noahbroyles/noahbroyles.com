@@ -1,2 +1,2 @@
-# noahbryoles.com
+# noahbroyles.com
 My internet blogging website. Live at [noahbroyles.com](https://noahbroyles.com)
